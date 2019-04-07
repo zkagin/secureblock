@@ -8,12 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		FE067BB821FCC446000EDB5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE067BB721FCC446000EDB5D /* AppDelegate.swift */; };
-		FE067BBA21FCC446000EDB5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE067BB921FCC446000EDB5D /* ViewController.swift */; };
-		FE067BBD21FCC446000EDB5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE067BBB21FCC446000EDB5D /* Main.storyboard */; };
+		FE067BBA21FCC446000EDB5D /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE067BB921FCC446000EDB5D /* RootViewController.swift */; };
 		FE067BBF21FCC447000EDB5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE067BBE21FCC447000EDB5D /* Assets.xcassets */; };
 		FE067BC221FCC447000EDB5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE067BC021FCC447000EDB5D /* LaunchScreen.storyboard */; };
-		FE067BCD21FCC447000EDB5D /* SecureBlockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE067BCC21FCC447000EDB5D /* SecureBlockTests.swift */; };
+		FE067BCD21FCC447000EDB5D /* PhoneNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE067BCC21FCC447000EDB5D /* PhoneNumberTests.swift */; };
 		FE067BD821FCC447000EDB5D /* SecureBlockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE067BD721FCC447000EDB5D /* SecureBlockUITests.swift */; };
+		FE61B55421FCC739009ED0FD /* CallDirectoryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE61B55321FCC739009ED0FD /* CallDirectoryHandler.swift */; };
+		FE61B55821FCC739009ED0FD /* CallDirectoryExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FE61B55121FCC739009ED0FD /* CallDirectoryExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FE61B56321FD1882009ED0FD /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE61B56221FD1882009ED0FD /* PhoneNumber.swift */; };
+		FE61B56421FD1882009ED0FD /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE61B56221FD1882009ED0FD /* PhoneNumber.swift */; };
+		FE61B56521FD1882009ED0FD /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE61B56221FD1882009ED0FD /* PhoneNumber.swift */; };
+		FE61B56621FD1882009ED0FD /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE61B56221FD1882009ED0FD /* PhoneNumber.swift */; };
+		FE61B5B021FD24D7009ED0FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE067BB721FCC446000EDB5D /* AppDelegate.swift */; };
+		FE61B5B121FD24D8009ED0FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE067BB721FCC446000EDB5D /* AppDelegate.swift */; };
+		FE61B5B221FD24D8009ED0FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE067BB721FCC446000EDB5D /* AppDelegate.swift */; };
+		FE61B5B321FD24DC009ED0FD /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE067BB921FCC446000EDB5D /* RootViewController.swift */; };
+		FE61B5B421FD24DD009ED0FD /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE067BB921FCC446000EDB5D /* RootViewController.swift */; };
+		FE61B5B521FD24DD009ED0FD /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE067BB921FCC446000EDB5D /* RootViewController.swift */; };
+		FE755FBA21FE1DED00DA4852 /* countryInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = FE755FB921FE1DED00DA4852 /* countryInfo.json */; };
+		FE755FBB21FE1DED00DA4852 /* countryInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = FE755FB921FE1DED00DA4852 /* countryInfo.json */; };
+		FE755FBC21FE1DED00DA4852 /* countryInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = FE755FB921FE1DED00DA4852 /* countryInfo.json */; };
+		FE755FBD21FE1DED00DA4852 /* countryInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = FE755FB921FE1DED00DA4852 /* countryInfo.json */; };
+		FEC40AA3225920980016D472 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC40AA2225920980016D472 /* InfoViewController.swift */; };
+		FEC40AA4225920980016D472 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC40AA2225920980016D472 /* InfoViewController.swift */; };
+		FEC40AA52259217B0016D472 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC40AA2225920980016D472 /* InfoViewController.swift */; };
+		FEC40AA62259217C0016D472 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC40AA2225920980016D472 /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,22 +50,50 @@
 			remoteGlobalIDString = FE067BB321FCC446000EDB5D;
 			remoteInfo = SecureBlock;
 		};
+		FE61B55621FCC739009ED0FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE067BAC21FCC445000EDB5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE61B55021FCC739009ED0FD;
+			remoteInfo = CallDirectoryExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FE61B55C21FCC739009ED0FD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FE61B55821FCC739009ED0FD /* CallDirectoryExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FE067BB421FCC446000EDB5D /* SecureBlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecureBlock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE067BB721FCC446000EDB5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FE067BB921FCC446000EDB5D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FE067BBC21FCC446000EDB5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FE067BB921FCC446000EDB5D /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		FE067BBE21FCC447000EDB5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE067BC121FCC447000EDB5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE067BC321FCC447000EDB5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE067BC821FCC447000EDB5D /* SecureBlockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecureBlockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE067BCC21FCC447000EDB5D /* SecureBlockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureBlockTests.swift; sourceTree = "<group>"; };
+		FE067BCC21FCC447000EDB5D /* PhoneNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberTests.swift; sourceTree = "<group>"; };
 		FE067BCE21FCC447000EDB5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE067BD321FCC447000EDB5D /* SecureBlockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecureBlockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE067BD721FCC447000EDB5D /* SecureBlockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureBlockUITests.swift; sourceTree = "<group>"; };
 		FE067BD921FCC447000EDB5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE61B55121FCC739009ED0FD /* CallDirectoryExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CallDirectoryExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE61B55321FCC739009ED0FD /* CallDirectoryHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallDirectoryHandler.swift; sourceTree = "<group>"; };
+		FE61B55521FCC739009ED0FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE61B56221FD1882009ED0FD /* PhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumber.swift; sourceTree = "<group>"; };
+		FE755FB921FE1DED00DA4852 /* countryInfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countryInfo.json; sourceTree = "<group>"; };
+		FE755FBE21FE794100DA4852 /* SecureBlock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SecureBlock.entitlements; sourceTree = "<group>"; };
+		FE755FBF21FE794800DA4852 /* CallDirectoryExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CallDirectoryExtension.entitlements; sourceTree = "<group>"; };
+		FEC40AA2225920980016D472 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +118,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FE61B54E21FCC739009ED0FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +134,7 @@
 				FE067BB621FCC446000EDB5D /* SecureBlock */,
 				FE067BCB21FCC447000EDB5D /* SecureBlockTests */,
 				FE067BD621FCC447000EDB5D /* SecureBlockUITests */,
+				FE61B55221FCC739009ED0FD /* CallDirectoryExtension */,
 				FE067BB521FCC446000EDB5D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +145,7 @@
 				FE067BB421FCC446000EDB5D /* SecureBlock.app */,
 				FE067BC821FCC447000EDB5D /* SecureBlockTests.xctest */,
 				FE067BD321FCC447000EDB5D /* SecureBlockUITests.xctest */,
+				FE61B55121FCC739009ED0FD /* CallDirectoryExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,12 +153,15 @@
 		FE067BB621FCC446000EDB5D /* SecureBlock */ = {
 			isa = PBXGroup;
 			children = (
+				FE067BB921FCC446000EDB5D /* RootViewController.swift */,
+				FEC40AA2225920980016D472 /* InfoViewController.swift */,
+				FE61B56221FD1882009ED0FD /* PhoneNumber.swift */,
 				FE067BB721FCC446000EDB5D /* AppDelegate.swift */,
-				FE067BB921FCC446000EDB5D /* ViewController.swift */,
-				FE067BBB21FCC446000EDB5D /* Main.storyboard */,
-				FE067BBE21FCC447000EDB5D /* Assets.xcassets */,
 				FE067BC021FCC447000EDB5D /* LaunchScreen.storyboard */,
+				FE755FB921FE1DED00DA4852 /* countryInfo.json */,
 				FE067BC321FCC447000EDB5D /* Info.plist */,
+				FE755FBE21FE794100DA4852 /* SecureBlock.entitlements */,
+				FE067BBE21FCC447000EDB5D /* Assets.xcassets */,
 			);
 			path = SecureBlock;
 			sourceTree = "<group>";
@@ -110,7 +169,7 @@
 		FE067BCB21FCC447000EDB5D /* SecureBlockTests */ = {
 			isa = PBXGroup;
 			children = (
-				FE067BCC21FCC447000EDB5D /* SecureBlockTests.swift */,
+				FE067BCC21FCC447000EDB5D /* PhoneNumberTests.swift */,
 				FE067BCE21FCC447000EDB5D /* Info.plist */,
 			);
 			path = SecureBlockTests;
@@ -125,6 +184,16 @@
 			path = SecureBlockUITests;
 			sourceTree = "<group>";
 		};
+		FE61B55221FCC739009ED0FD /* CallDirectoryExtension */ = {
+			isa = PBXGroup;
+			children = (
+				FE755FBF21FE794800DA4852 /* CallDirectoryExtension.entitlements */,
+				FE61B55321FCC739009ED0FD /* CallDirectoryHandler.swift */,
+				FE61B55521FCC739009ED0FD /* Info.plist */,
+			);
+			path = CallDirectoryExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +204,12 @@
 				FE067BB021FCC446000EDB5D /* Sources */,
 				FE067BB121FCC446000EDB5D /* Frameworks */,
 				FE067BB221FCC446000EDB5D /* Resources */,
+				FE61B55C21FCC739009ED0FD /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FE61B55721FCC739009ED0FD /* PBXTargetDependency */,
 			);
 			name = SecureBlock;
 			productName = SecureBlock;
@@ -181,6 +252,23 @@
 			productReference = FE067BD321FCC447000EDB5D /* SecureBlockUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		FE61B55021FCC739009ED0FD /* CallDirectoryExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE61B55921FCC739009ED0FD /* Build configuration list for PBXNativeTarget "CallDirectoryExtension" */;
+			buildPhases = (
+				FE61B54D21FCC739009ED0FD /* Sources */,
+				FE61B54E21FCC739009ED0FD /* Frameworks */,
+				FE61B54F21FCC739009ED0FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CallDirectoryExtension;
+			productName = CallDirectoryExtension;
+			productReference = FE61B55121FCC739009ED0FD /* CallDirectoryExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -188,19 +276,36 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Zach Kagin";
 				TargetAttributes = {
 					FE067BB321FCC446000EDB5D = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					FE067BC721FCC447000EDB5D = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = FE067BB321FCC446000EDB5D;
 					};
 					FE067BD221FCC447000EDB5D = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = FE067BB321FCC446000EDB5D;
+					};
+					FE61B55021FCC739009ED0FD = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -220,6 +325,7 @@
 				FE067BB321FCC446000EDB5D /* SecureBlock */,
 				FE067BC721FCC447000EDB5D /* SecureBlockTests */,
 				FE067BD221FCC447000EDB5D /* SecureBlockUITests */,
+				FE61B55021FCC739009ED0FD /* CallDirectoryExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -230,8 +336,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE067BC221FCC447000EDB5D /* LaunchScreen.storyboard in Resources */,
+				FE755FBA21FE1DED00DA4852 /* countryInfo.json in Resources */,
 				FE067BBF21FCC447000EDB5D /* Assets.xcassets in Resources */,
-				FE067BBD21FCC446000EDB5D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +345,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE755FBB21FE1DED00DA4852 /* countryInfo.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +353,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE755FBC21FE1DED00DA4852 /* countryInfo.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE61B54F21FCC739009ED0FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE755FBD21FE1DED00DA4852 /* countryInfo.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +372,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE067BBA21FCC446000EDB5D /* ViewController.swift in Sources */,
+				FE067BBA21FCC446000EDB5D /* RootViewController.swift in Sources */,
 				FE067BB821FCC446000EDB5D /* AppDelegate.swift in Sources */,
+				FEC40AA3225920980016D472 /* InfoViewController.swift in Sources */,
+				FE61B56321FD1882009ED0FD /* PhoneNumber.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +383,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE067BCD21FCC447000EDB5D /* SecureBlockTests.swift in Sources */,
+				FE61B5B321FD24DC009ED0FD /* RootViewController.swift in Sources */,
+				FE61B5B021FD24D7009ED0FD /* AppDelegate.swift in Sources */,
+				FE067BCD21FCC447000EDB5D /* PhoneNumberTests.swift in Sources */,
+				FE61B56421FD1882009ED0FD /* PhoneNumber.swift in Sources */,
+				FEC40AA4225920980016D472 /* InfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +395,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE61B5B421FD24DD009ED0FD /* RootViewController.swift in Sources */,
+				FE61B5B121FD24D8009ED0FD /* AppDelegate.swift in Sources */,
 				FE067BD821FCC447000EDB5D /* SecureBlockUITests.swift in Sources */,
+				FE61B56521FD1882009ED0FD /* PhoneNumber.swift in Sources */,
+				FEC40AA52259217B0016D472 /* InfoViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE61B54D21FCC739009ED0FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE61B5B521FD24DD009ED0FD /* RootViewController.swift in Sources */,
+				FE61B5B221FD24D8009ED0FD /* AppDelegate.swift in Sources */,
+				FE61B55421FCC739009ED0FD /* CallDirectoryHandler.swift in Sources */,
+				FE61B56621FD1882009ED0FD /* PhoneNumber.swift in Sources */,
+				FEC40AA62259217C0016D472 /* InfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,17 +428,14 @@
 			target = FE067BB321FCC446000EDB5D /* SecureBlock */;
 			targetProxy = FE067BD421FCC447000EDB5D /* PBXContainerItemProxy */;
 		};
+		FE61B55721FCC739009ED0FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE61B55021FCC739009ED0FD /* CallDirectoryExtension */;
+			targetProxy = FE61B55621FCC739009ED0FD /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FE067BBB21FCC446000EDB5D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FE067BBC21FCC446000EDB5D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FE067BC021FCC447000EDB5D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -431,8 +566,11 @@
 		FE067BDD21FCC447000EDB5D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SecureBlock/SecureBlock.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4SLF2Z3L67;
 				INFOPLIST_FILE = SecureBlock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -440,7 +578,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kagin.SecureBlock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -448,8 +586,11 @@
 		FE067BDE21FCC447000EDB5D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SecureBlock/SecureBlock.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4SLF2Z3L67;
 				INFOPLIST_FILE = SecureBlock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -457,7 +598,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kagin.SecureBlock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -468,6 +609,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4SLF2Z3L67;
 				INFOPLIST_FILE = SecureBlockTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -476,7 +618,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kagin.SecureBlockTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SecureBlock.app/SecureBlock";
 			};
@@ -488,6 +630,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4SLF2Z3L67;
 				INFOPLIST_FILE = SecureBlockTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -496,7 +639,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kagin.SecureBlockTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SecureBlock.app/SecureBlock";
 			};
@@ -507,6 +650,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4SLF2Z3L67;
 				INFOPLIST_FILE = SecureBlockUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -515,7 +659,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kagin.SecureBlockUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SecureBlock;
 			};
@@ -526,6 +670,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4SLF2Z3L67;
 				INFOPLIST_FILE = SecureBlockUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -534,9 +679,49 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kagin.SecureBlockUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SecureBlock;
+			};
+			name = Release;
+		};
+		FE61B55A21FCC739009ED0FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CallDirectoryExtension/CallDirectoryExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4SLF2Z3L67;
+				INFOPLIST_FILE = CallDirectoryExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kagin.SecureBlock.CallDirectoryExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FE61B55B21FCC739009ED0FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CallDirectoryExtension/CallDirectoryExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4SLF2Z3L67;
+				INFOPLIST_FILE = CallDirectoryExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kagin.SecureBlock.CallDirectoryExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -575,6 +760,15 @@
 			buildConfigurations = (
 				FE067BE321FCC447000EDB5D /* Debug */,
 				FE067BE421FCC447000EDB5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE61B55921FCC739009ED0FD /* Build configuration list for PBXNativeTarget "CallDirectoryExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE61B55A21FCC739009ED0FD /* Debug */,
+				FE61B55B21FCC739009ED0FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
